@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Section part */
+
+
+.container {
+    width: 100%;
+}
+
+section {
+    width: auto;
+    background-color: rgb(13,110,253);
+}
+
+section .nav {
+    width: 1000px;
+    height: 35px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+section .nav .contact {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-envelope, .fa-phone-alt {
+    margin-right: 5px;
+}
+
+section .nav .contact .mail p {
+    display: inline-block;
+}
+
+section .nav .contact .mail p:hover {
+    text-decoration: underline;
+}
+
+section .nav .social {
+    width: 140px;
+}
+
+section .nav .social i {
+    margin-right: 13px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+section .nav .social i:hover {
+    opacity: 1;
+}
+
+
+/* Navbar part */
+
+
+nav {
+    width: auto;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+
+nav .box {
+    width: 1000px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .box .logo {
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+span {
+    color: rgb(13,110,253);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav .box .navbar ul {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav .box .navbar ul li {
+    margin-right: 25px;
+    list-style: none;
+}
+
+nav .box .navbar .active {
+    border-bottom: 2px solid rgb(13,110,253);
+}
+
+/* nav .box .navbar ul li .underline {
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: red;
+    transition: 0.3s;
+    border-radius: 2px;    
+} */
+
+nav .box .navbar ul li .drop {
+    position: relative;
+}
+
+nav .box .navbar ul li .drop .dropdown {
+    position: absolute;
+    width: 160px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    display: none;
+    transition: all 0.5s linear;
+}
+
+nav .box .navbar ul li .drop:hover .dropdown {
+    display: block;
+    z-index: 1000;
+}
+
+nav .box .navbar ul li .drop .dropdown 
+.dropdown-item {
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 15px;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    position: relative;
+}
+
+nav .box .navbar ul li .drop .dropdown 
+.dropdown-item .dropdown-deep {
+    background-color: #fff;
+}
+
+nav .box .navbar ul li .drop .dropdown 
+.dropdown-item:hover {
+    color: rgb(13,110,253);
+}
+
+nav .box .navbar ul li .drop .dropdown i {
+    margin: 0 10px;
+}
+
+nav .box .navbar ul li .drop .dropdown 
+.dropdown-item .dropdown-deep {
+    width: 160px;
+    height: 200px;
+    top: 0;
+    position: absolute;
+    left: 150px;
+    display: none;
+}
+
+nav .box .navbar ul li .drop .dropdown 
+.droop:hover .dropdown-deep {
+    display: block;
+    list-style: none;
+    color: black;
+}
+
+nav .box .navbar ul li .drop .dropdown 
+.dropdown-item .dropdown-deep .dropdown-deep-item {
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 15px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+nav .box .navbar ul li .drop .dropdown 
+.dropdown-deep .dropdown-deep-item:hover {
+    color: rgb(13,110,253);;
+}
+
+
+/* Main part */
+
+
+main {
+    width: 100%;
+}
+
+main .image {
+    width: auto;
+    position: relative;
+}
+
+main .image img {
+    width: 100%;
+    height: 500px;
+    opacity: 0.5;
+}
+
+main .image .welcome {
+    width: 1000px;
+    height: 250px;
+    position: absolute;
+    top: 130px;
+    left: 270px;
+    
+}
+
+main .image .welcome .main-text h3 {
+    color: rgb(90, 87, 87);
+    font-weight: 400;
+    margin: 10px 0 20px 0;
+}
+
+main .image .welcome .start {
+    display: flex;
+    align-items: center;
+}
+
+main .image .welcome .start button {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(13,110,253);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+main .image .welcome .video {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+}
+
+main .image .welcome .video i {
+    font-size: 28px;
+    color: rgb(13,110,253);
+    align-items: center;
+}
+
+main .image .welcome .video .watch {
+    font-size: 16px;
+    margin: 5px;
+}
+
+
+/* Footer Part */
+
+
+footer {
+    width: 100%;
+}
+
+footer .card {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+
+footer .card .card-item {
+    width: 23%;
+    height: 210px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+footer .card .card-item i {
+    font-size: 32px;
+    margin: 20px;
+    color: rgb(13,110,253);
+}
+
+footer .card .card-item p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 20px;
+}
+
+footer .card .card-item p:nth-child(3) {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(59, 57, 57);
+    margin: 20px 20px;
+    line-height: 1.5;
+}
+
+footer .card .card-item:hover {
+    background-color: rgb(13,110,253);
+    transition: all 0.5s linear;
+}
+
+footer .card .card-item:hover p {
+    color: #fff;
+}
+
+footer .card .card-item:hover i {
+    color: #fff;
+}
+
+/* footer .card .card-item .drop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(13,110,253);
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+footer .card .card-item:hover .drop {
+    width: 23%;
+    height: 210px;
+} */
