@@ -206,40 +206,35 @@ nav .box .navbar ul li .drop .dropdown
 
 main {
     width: 100%;
-}
-
-main .image {
-    width: auto;
+    height: 70vh;
+    background-image: url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
-main .image img {
-    width: 100%;
-    height: 500px;
-    opacity: 0.5;
-}
-
-main .image .welcome {
+main .welcome {
     width: 1000px;
-    height: 250px;
+    margin: auto;
     position: absolute;
-    top: 130px;
-    left: 270px;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-main .image .welcome .main-text h3 {
+main .welcome .main-text h3 {
     color: rgb(90, 87, 87);
     font-weight: 400;
     margin: 10px 0 20px 0;
 }
 
-main .image .welcome .start {
+main .welcome .start {
     display: flex;
     align-items: center;
 }
 
-main .image .welcome .start button {
+main .welcome .start button {
     width: 120px;
     height: 30px;
     font-size: 12px;
@@ -252,19 +247,19 @@ main .image .welcome .start button {
     cursor: pointer;
 }
 
-main .image .welcome .video {
+main .welcome .video {
     height: 30px;
     display: flex;
     cursor: pointer;
 }
 
-main .image .welcome .video i {
+main .welcome .video i {
     font-size: 28px;
     color: rgb(13,110,253);
     align-items: center;
 }
 
-main .image .welcome .video .watch {
+main .welcome .video .watch {
     font-size: 16px;
     margin: 5px;
 }
